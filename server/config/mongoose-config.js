@@ -4,6 +4,7 @@ const pw = process.env.ATLAS_PASSWORD;
 const dbName = "Jokesdb"
 
 // connect to cloud database and grab url provided by MongoDB UI
+// Still need to connect to atlas database before running server
 const uri = `mongodb+srv://${username}:${pw}@cluster0.8oaqdty.mongodb.net/${dbName}?retryWrites=true&w=majority`
 console.log(uri)
 
