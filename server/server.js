@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
-import dbConnect from '.config/mongoose-config.js';
+import express from 'express';
+import dbConnect from './config/mongoose-config.js';
 import recordRouter from './routes/record_routes.js';
 import cors from 'cors';
 
@@ -24,10 +25,10 @@ async function serverStart() {
     try {
         await dbConnect();
         const PORT = process.env.PORT;
-        app.listen(Port, () => console.log(`Server is running on port: ${PORT}`));
+        app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
     } catch (err) {
         console.log('Error starting server:', err);
     }
 }
 
-serverStart();
+export default serverStart();

@@ -52,3 +52,4 @@ when creating a new record. */
 });
 
 export const Record = model('Record', RecordSchema);
+export default RecordSchema;
