@@ -47,7 +47,7 @@ when creating a new record. */
         genre2: String,
         genre3: String,
         // type: [String],
-        required: [true, "At least one genre is required"],
+        // required: [true, "At least one genre is required"],
     }
 });
 

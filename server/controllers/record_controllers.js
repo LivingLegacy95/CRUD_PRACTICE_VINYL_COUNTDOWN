@@ -85,6 +85,7 @@ async function updateOneRecord(req, res) {
             new: true, 
             runValidators: true});
         res.status(200).json(oneRecord);
+        console.log(updatedRecord);
     } catch (err) {
         console.log(err);
         res.status(400).json.err('Error creating record');
